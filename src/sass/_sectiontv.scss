@@ -1,0 +1,28 @@
+.sectionTV {
+    @extend .section;
+    border-top: 8px solid #222;
+
+    .info {
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2 {
+            font-size: 3.4rem;
+        }
+
+        p {
+            font-size: 1.625rem;
+            margin-top: 15px;
+            margin-left: 17%;
+        }
+    }
+
+    .tv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

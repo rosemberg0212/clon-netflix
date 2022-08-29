@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$red-btn: #e50914;
+
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    height: 473.92px;
+    background-color: #000000;
+    border-bottom: 8px solid #222;
+}
+@import  'plan';
+@import  'sectiontv';
+@import  'sectiondl';
+@import  'sectiondisf';
+@import  'sectionNinos';

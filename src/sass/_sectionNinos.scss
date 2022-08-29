@@ -1,0 +1,26 @@
+.SectionNinos{
+    @extend .section;
+
+    .img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info{
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+
+        .sub{
+            padding-right: 20%;
+            h2{
+                font-size: 3.125rem;
+                line-height: 1.1;
+            }
+            p{
+                font-size: 1.625rem;
+            }
+        }
+    }
+}
