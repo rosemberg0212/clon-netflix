@@ -1,20 +1,23 @@
 import React from 'react'
 import img from '../../img/logo.png'
-import {IoIosArrowForward} from 'react-icons/io'
+import { IoIosArrowForward } from 'react-icons/io'
+import { Link } from 'react-router-dom'
 
 const Plan = () => {
     return (
         <div className='plan'>
             <div className='header'>
                 <div className='logo'>
-                    <img src={img} alt='logo' className='logo-nexflix'/>
+                    <img src={img} alt='logo' className='logo-nexflix' />
                 </div>
                 <div className='sesion'>
                     <select>
                         <option>Español</option>
                         <option>English</option>
                     </select>
-                    <button>Iniciar sesión</button>
+                    <Link to='login'>
+                        <button>Iniciar sesión</button>
+                    </Link>
                 </div>
             </div>
 
@@ -26,8 +29,8 @@ const Plan = () => {
                 <div className='cuenta'>
                     <p>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
                     <div className='correo'>
-                        <input type='mail' placeholder='Email'/>
-                        <button>Comenzar <IoIosArrowForward/></button>
+                        <input type='mail' placeholder='Email' />
+                        <button>Comenzar <IoIosArrowForward /></button>
                     </div>
                 </div>
             </div>

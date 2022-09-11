@@ -1,0 +1,45 @@
+.footer-login{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.70);
+    height: 258px;
+    color: $font;
+    padding: 2% 11%;
+    margin-top: 90px;
+
+    .title{
+        margin-bottom: 20px;
+    }
+    
+    a{
+        text-decoration: none;
+        color: $font;
+
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+
+        .flex{
+            display: flex;
+            flex-direction: column;
+
+            a{
+                margin-top: 10px;
+                font-size: 13px;
+            }
+
+            select{
+                width: 125px;
+                height: 48px;
+                background-color: #000000;
+                text-align: center;
+                color: $font;
+                margin-top: 30px;
+            }
+        }
+    }
+}

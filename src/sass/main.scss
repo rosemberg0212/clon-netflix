@@ -5,6 +5,7 @@
 }
 
 $red-btn: #e50914;
+$font: #8c8c8c;
 
 .section{
     display: grid;
@@ -18,3 +19,8 @@ $red-btn: #e50914;
 @import  'sectiondl';
 @import  'sectiondisf';
 @import  'sectionNinos';
+@import  'login';
+@import  'footerLogin';
+@import  'footerHome';
+@import  'contenido';
+@import  'header';
