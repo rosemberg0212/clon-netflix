@@ -4,6 +4,7 @@ import { usePeli } from '../../context/pelis/peliContext'
 import img from '../../img/logo2.png'
 import Header from '../layout/Header'
 import Card from './Card'
+import Footer from '../layout/Footer'
 // import Swiper core and required modules
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
@@ -130,6 +131,68 @@ const Contenido = () => {
                         </Swiper>
                     </div>
                 </Card>
+                <Card>
+                    <div className='carrusel'>
+                        <p>Series de acción y aventuras</p>
+                        <Swiper
+                            // install Swiper modules
+                            modules={[Navigation, Pagination, Scrollbar, A11y]}
+                            spaceBetween={8}
+                            slidesPerView={5}
+                            navigation
+                            pagination={{ clickable: true }}
+                            // scrollbar={{ draggable: true }}
+                            onSwiper={(swiper) => console.log(swiper)}
+                            onSlideChange={() => console.log('slide change')}
+                            className='cards'
+                        >
+                            {tend.map(t => (
+                                <SwiperSlide className='card-img'
+                                key={t?.id}>
+                                <img src={`${base_url}${t?.poster_path}`} alt='card' />
+                            </SwiperSlide>
+                            ))}
+
+                        </Swiper>
+                    </div>
+                </Card>
+                <Footer>
+                <div className='footer-home'  >
+                    <p className='title'>¿Preguntas? Llama al 01 800 917 1564</p>
+                    <div className='grid'>
+                        <div className='flex'>
+                            <a href='/'>Preguntas frecuentes</a>
+                            <a href='/'>Relaciones con inversionistas</a>
+                            <a href='/'>Formas de ver</a>
+                            <a href='/'>Información corporativa</a>
+                            <a href='/'>Solo en Netflix</a>
+                            <select>
+                                <option>Español</option>
+                                <option>English</option>
+                            </select>
+                            <p>Netflix Colombia</p>
+                        </div>
+                        <div className='flex'>
+                            <a href='/'>Centro de ayuda</a>
+                            <a href='/'>Empleo</a>
+                            <a href='/'>Términos de uso</a>
+                            <a href='/'>Contáctanos</a>
+                        </div>
+                        <div className='flex'>
+                            <a href='/'>Cuenta</a>
+                            <a href='/'>Canjear tarjetas de regalo</a>
+                            <a href='/'>Privacidad</a>
+                            <a href='/'>Prueba de velocidad</a>
+                        </div>
+                        <div className='flex'>
+                            <a href='/'>Prensa</a>
+                            <a href='/'>Comprar tarjetas de regalo</a>
+                            <a href='/'>Preferencias de cookies</a>
+                            <a href='/'>Avisos legales</a>
+                        </div>
+                    </div>
+                </div>
+            </Footer>
             </div>
         </>
     )

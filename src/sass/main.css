@@ -454,6 +454,7 @@
 .content-card .carrusel .cards .card-img {
   width: 150px;
   height: 245px;
+  cursor: pointer;
 }
 .content-card .carrusel .cards .card-img img {
   width: 100%;
@@ -461,9 +462,6 @@
   -o-object-fit: fill;
      object-fit: fill;
   border-radius: 4px;
-}
-.content-card .carrusel .cards .card-img:hover {
-  transform: scale(1.5);
 }
 
 .header header {
@@ -475,7 +473,7 @@
   background-color: transparent;
   transition: 0.5s;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 .header header img {
   width: 92px;

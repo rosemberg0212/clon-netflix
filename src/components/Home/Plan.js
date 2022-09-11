@@ -2,8 +2,14 @@ import React from 'react'
 import img from '../../img/logo.png'
 import { IoIosArrowForward } from 'react-icons/io'
 import { Link } from 'react-router-dom'
+import Swal from 'sweetalert2'
 
 const Plan = () => {
+    const plan = ()=>{
+        Swal.fire(
+            'Esto es un proyecto personal, por lo cual no es necesario que compre ningun servicio, puede iniciar sesion con las credenciales pre establecidas!',
+          )
+    }
     return (
         <div className='plan'>
             <div className='header'>
@@ -30,7 +36,7 @@ const Plan = () => {
                     <p>¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.</p>
                     <div className='correo'>
                         <input type='mail' placeholder='Email' />
-                        <button>Comenzar <IoIosArrowForward /></button>
+                        <button onClick={plan}>Comenzar <IoIosArrowForward /></button>
                     </div>
                 </div>
             </div>
