@@ -48,3 +48,20 @@
         }
     }
 }
+
+.flexResponsive{
+    display: flex;
+}
+
+@media (max-width: 768px){
+    .flexResponsive{
+        display: flex;
+    }
+    .footer-home{
+    
+        .grid{
+            display: grid;
+            grid-template-columns: 1fr 1fr;   
+        }
+    }
+}

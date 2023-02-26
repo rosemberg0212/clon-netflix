@@ -24,3 +24,23 @@
         }
     }
 }
+
+@media (max-width: 760px){
+    .SectionNinos{
+    
+        .info{
+    
+            .sub{
+                text-align: center;
+                padding-right: 0;
+                h2{
+                    font-size: 2.5rem;
+                    line-height: 1.1;
+                }
+                p{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

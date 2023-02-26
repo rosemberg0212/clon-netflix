@@ -14,6 +14,21 @@ $font: #8c8c8c;
     background-color: #000000;
     border-bottom: 8px solid #222;
 }
+
+
+
+@media (max-width: 760px){
+    .section{
+        grid-template-columns: 1fr; 
+        height: 100%;
+        padding: 4rem 2rem;
+    }
+
+    img, svg {
+        vertical-align: middle;
+        width: 305px;
+    }
+}
 @import  'plan';
 @import  'sectiontv';
 @import  'sectiondl';

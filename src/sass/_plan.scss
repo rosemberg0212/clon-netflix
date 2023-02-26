@@ -105,3 +105,73 @@
         }
     }
 }
+
+@media (max-width: 760px){
+    .plan {
+        height: 100%;
+        
+        .header {
+    
+            .logo {
+                .logo-nexflix {
+                    width: 120px;
+                    margin-left: 10px;
+                }
+            }
+    
+            .sesion {
+                gap: 22px;
+    
+                select {
+                    height: 35px;
+                    width: 90px;
+                }
+    
+                button {
+                    height: 35px;
+                    width: 110px;
+                }
+            }
+        }
+    
+        .info {
+            margin-top: 5rem;
+    
+            .title {
+                width: 100%;
+                text-align: center;
+    
+                h2 {
+                    font-size: 2.1rem;
+                }
+    
+                p {
+                    font-size: 1.4rem;
+                    margin-top: 10px;
+                }
+            }
+    
+            .cuenta {
+                padding: 0 1rem;
+                p {
+                    font-size: 1.1rem;
+                    text-align: center;
+                }
+    
+                .correo {
+                    flex-direction: column;
+                    align-items: center;
+                    input {
+                        width: 100%;
+                    }
+    
+                    button {
+                        margin-top: 15px;
+                        margin-bottom: 5rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

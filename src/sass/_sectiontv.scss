@@ -26,3 +26,33 @@
         align-items: center;
     }
 }
+
+@media (max-width: 760px){
+    .sectionTV {
+    
+        .info {
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+    
+            h2 {
+                font-size: 2.5rem;
+            }
+    
+            p {
+                font-size: 1.2rem;
+                margin-top: 15px;
+                margin-left: 0;
+                text-align: center;
+            }
+        }
+    
+        .tv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
